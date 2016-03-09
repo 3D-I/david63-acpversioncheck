@@ -1,0 +1,30 @@
+{
+	"name": "david63/acpversioncheck",
+	"type": "phpbb-extension",
+	"description": "Displays the status of the board phpBB versions.",
+	"homepage": "",
+	"version": "1.0.0",
+	"time": "2016-03-06",
+	"keywords": [
+		"ACP",
+		"version"
+	],
+	"license": "GPL-2.0",
+	"authors": [{
+			"name": "David Wood",
+			"username": "david63",
+			"email": "",
+			"homepage": "",
+			"role": "Developer"
+		}],
+	"require": {
+        "php": ">=5.3.3",
+        "composer/installers": "~1.0"
+    },
+	"extra": {
+        "display-name": "ACP version check",
+        "soft-require": {
+            "phpbb/phpbb": ">=3.1.8,<3.2.0@dev"
+        }
+	}
+}

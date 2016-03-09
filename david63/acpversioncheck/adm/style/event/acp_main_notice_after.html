@@ -1,0 +1,50 @@
+<!-- IF S_ACP_VERSIONCHECK -->
+	<div class="successbox notice">
+		<p>{L_VERSIONS_CORRECT}</p>
+	</div>
+<!-- ELSE -->
+	<div class="errorbox">
+		<p>{L_VERSIONS_INCORRECT}
+	</div>
+	<div class="toggle"></p>
+		<table class="table1 two-columns no-header" data-no-responsive-header="true">
+			<caption>{L_VERSION_INFO}</caption>
+			<col class="col1" /><col class="col2" />
+			<thead>
+				<tr>
+					<th>{L_VERSION_NAME}</th>
+					<th>{L_VERSION}</th>
+				</tr>
+			</thead>
+
+			<tbody>
+				<tr>
+					<td>{L_DATABASE_VERSION}</td>
+					<td><strong>{DB_VERSION}</strong></td>
+				</tr>
+
+				<tr>
+					<td>{L_CONSTANT_VERSION}</td>
+					<td><strong>{CONSTANT_VERSION}</strong></td>
+				</tr>
+			</tbody>
+
+			<thead>
+				<tr>
+					<th>{L_STYLE_NAME}</th>
+					<th>{L_STYLE_VERSION}</th>
+				</tr>
+			</thead>
+
+			<tbody>
+				<!-- BEGIN style_versions -->
+					<tr>
+						<td>{style_versions.STYLE_NAME}</td>
+						<td><strong>{style_versions.STYLE_VERSION}</strong></td>
+					</tr>
+				<!-- END style_versions -->
+			</tbody>
+		</table>
+	</div>
+
+<!-- ENDIF -->
